@@ -7,6 +7,26 @@ public class Admin extends Person{
     public Admin(long id, String name) {
         super(id, name);
     }
+
+    public Admin(long id, String name, String password) {
+        super(id, name);
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "password='" + password + '\'' +
+                "} " + super.toString();
+    }
 }
 
 
