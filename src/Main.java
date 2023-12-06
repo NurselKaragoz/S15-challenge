@@ -35,5 +35,5 @@ public class Main {
         book.add(new Book(1L,"İzmir Hayaletleri", autor1,"Delidolu",true,new Categories("novel")));
         System.out.println(book);
     }
-
+//commit
 }
