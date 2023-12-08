@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8891977b-5a4d-4e5e-bd3e-407bb36925e5" name="Changes" comment="Couldnt list of book after barrow">
+    <list default="true" id="8891977b-5a4d-4e5e-bd3e-407bb36925e5" name="Changes" comment="final project">
+      <change afterPath="$PROJECT_DIR$/src/images" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/workintech/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/workintech/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/workintech/library/Bookable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/workintech/library/Bookable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nurse/OneDrive/Masaüstü/sprint15/JavaSets&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nurse/OneDrive/Masaüstü/algoritma_calısmaları/add-lastdigitandfirstdigit/LibraryProject/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/nurse/OneDrive/Masaüstü/sprint15/JavaSets",
+    "onboarding.tips.debug.path": "C:/Users/nurse/OneDrive/Masaüstü/algoritma_calısmaları/add-lastdigitandfirstdigit/LibraryProject/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -126,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702035087866</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final project">
+      <option name="closed" value="true" />
+      <created>1702038206033</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702038206033</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +181,8 @@
     <MESSAGE value="added users check" />
     <MESSAGE value="list of book, return book methods completed" />
     <MESSAGE value="Couldnt list of book after barrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Couldnt list of book after barrow" />
+    <MESSAGE value="final project" />
+    <option name="LAST_COMMIT_MESSAGE" value="final project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
