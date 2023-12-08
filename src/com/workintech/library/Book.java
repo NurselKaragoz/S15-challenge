@@ -2,7 +2,7 @@ package com.workintech.library;
 
 import java.util.Objects;
 
-public class Book {
+public class Book implements Bookable{
     private long id;
     private String title;
     private Author author;
@@ -90,5 +90,15 @@ public class Book {
                 ", isAvailable=" + isAvailable +
                 ", categories=" + categories +
                 '}';
+    }
+
+    @Override
+    public void barrowBook() {
+
+    }
+
+    @Override
+    public void returnBook() {
+
     }
 }
