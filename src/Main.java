@@ -1,6 +1,7 @@
 import com.workintech.library.*;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,7 +13,6 @@ public class Main {
         categoriesList.add(new Categories("magazine"));
         categoriesList.add(new Categories("history"));
         categoriesList.add(new Categories("science"));
-        System.out.println(categoriesList);
 
         Admin admin = new Admin(23, "Emel", "123456nk");
 
@@ -20,14 +20,14 @@ public class Main {
         authorList.add(new Author(12, "Loren Edizel"));
         authorList.add(new Author(13, "Charles Dickens"));
         authorList.add(new Author(14, "İskender Pala"));
-        System.out.println(authorList);
+
 
         List<Book> library = new ArrayList<>();
         library.add(new Book(1, "İzmir Hayaletleri", authorList.get(0), "Delidolu", true, categoriesList.get(0)));
         library.add(new Book(2, "Büyük Umutlar", authorList.get(1), "Metis Yayınları", true, categoriesList.get(0)));
         library.add(new Book(3, "Şah ve Sultan", authorList.get(2), "Can Yayınları", true, categoriesList.get(0)));
 
-        System.out.println(library);
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kullanıcı Adınız: ");
@@ -60,7 +60,7 @@ public class Main {
                         borrowBook(userName, library, scanner);
                         break;
                     case 3:
-                        returnBook(userName, library, scanner);
+                        returnBook( library, scanner);
                         break;
                     case 4:
                         updateBook(library, scanner);
@@ -77,7 +77,7 @@ public class Main {
                 }
             }
         } else {
-            System.out.println("Kullanıcı olarak giriş yapıldı.");
+            System.out.println("Kullanıcı bulunamadı.");
         }
 
         scanner.close();
@@ -98,10 +98,16 @@ public class Main {
         System.out.println("Kitap Adını Giriniz: ");
         String bookName = scanner.nextLine();
 
-        for (Book book : library) {
-            if (book.getTitle().equalsIgnoreCase(bookName) && book.isAvailable()) {
+        Iterator<Book> iterator = library.iterator();
+        while (iterator.hasNext()) {
+            Book book = iterator.next();
+            if (book.getTitle()
+                    .equalsIgnoreCase(bookName) &&
+                    book.isAvailable()) {
                 book.setAvailable(false);
                 System.out.println("Kitap başarıyla alındı.");
+                iterator.remove();
+
                 return;
             }
         }
@@ -109,12 +115,14 @@ public class Main {
         System.out.println("Kitap bulunamadı veya mevcut değil.");
     }
 
-    private static void returnBook(String userName, List<Book> library, Scanner scanner) {
+    private static void returnBook( List<Book> library, Scanner scanner) {
         System.out.println("Kitap Adını Giriniz: ");
         String bookName = scanner.nextLine();
 
         for (Book book : library) {
-            if (book.getTitle().equalsIgnoreCase(bookName) && !book.isAvailable()) {
+            if (bookName
+                    .equalsIgnoreCase(book.getTitle()) &&
+                    !book.isAvailable()) {
                 book.setAvailable(true);
                 System.out.println("Kitap başarıyla iade edildi.");
                 return;
@@ -123,7 +131,6 @@ public class Main {
 
         System.out.println("Kitap bulunamadı veya zaten iade edilmiş.");
     }
-
     private static void updateBook(List<Book> library, Scanner scanner) {
         System.out.println("Kitap Adını Giriniz: ");
         String bookName = scanner.nextLine();

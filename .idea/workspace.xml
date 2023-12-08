@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8891977b-5a4d-4e5e-bd3e-407bb36925e5" name="Changes" comment="added users check">
+    <list default="true" id="8891977b-5a4d-4e5e-bd3e-407bb36925e5" name="Changes" comment="list of book, return book methods completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/workintech/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/workintech/library/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701894309058</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="list of book, return book methods completed">
+      <option name="closed" value="true" />
+      <created>1701957364717</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701957364717</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +163,17 @@
     <MESSAGE value="user,admin,book,author classları eklendi" />
     <MESSAGE value="added commit" />
     <MESSAGE value="added users check" />
-    <option name="LAST_COMMIT_MESSAGE" value="added users check" />
+    <MESSAGE value="list of book, return book methods completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="list of book, return book methods completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
